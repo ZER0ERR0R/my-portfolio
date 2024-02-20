@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Mono&family=Nova+Round&family=Nova+Square&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Nova Round", system-ui;
+  }
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-lightGray dark:bg-gray-900;
+}
+
+
+section {
+  height: 100vh;
+  margin-bottom: 20px;
+  scroll-snap-align: center;
+}
+
+.offset-tb {
+  box-shadow:
+    0.3em 0.3em 0 0 #259fb7,
+    inset 0.3em 0.3em 0 0 #259fb7;
+}
+.offset-tb:hover,
+.offset-tb:focus {
+  box-shadow:
+    0 0 0 0 #80d8ff,
+    inset 6em 3.5em 0 0 #80d8ff;
+}
+
+.offset-lb {
+  box-shadow:
+    0.3em 0.3em 0 0 #80d8ff,
+    inset 0.3em 0.3em 0 0 #80d8ff;
+}
+.offset-lb:hover,
+.offset-lb:focus {
+  box-shadow:
+    0 0 0 0 #259fb7,
+    inset 6em 3.5em 0 0 #259fb7;
+}
+
+
